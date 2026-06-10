@@ -24,3 +24,6 @@ build/
 logs/
 
 /info
+
+src/alt models
+backtest copy.py
