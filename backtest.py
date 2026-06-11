@@ -12,7 +12,6 @@ def run_backtest() -> None:
     clean_data = load_and_clean_data()
     train_data = clean_data[clean_data['date'] <= cutoff_date]
     test_data = clean_data[clean_data['date'] > cutoff_date]
-
     baselines, strengths = generate_model_inputs(train_data)
 
     correct_total_goals = 0
